@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300;1,500&display=swap");
+.App {
+  text-align: center;
+  background-image: url("../src/Coco\ Image\ background\ 3.png");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+}
+/* .App-toggler {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 15rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1500;
+  transition: transform 650ms ease-out;
+} */
+
+.appName {
+  color: rgb(255, 255, 255);
+  font-family: "Spartan", monospace;
+  font-size: 35px;
+  text-shadow: 3px 3px#ff812787;
+  margin-top: -8rem;
+  margin-left: -3rem;
+}
+
+.appDescription {
+  color: rgb(255, 255, 255);
+  font-family: "Spartan", monospace;
+  margin-top: -2rem;
+  margin-left: -70rem;
+}
+
+.nav-list {
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  display: table-column-group;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.buttonContainer {
+  margin-top: 5rem;
+  margin-left: 10rem;
+}
+.btn {
+  border: 1px solid rgb(252, 241, 210);
+  border-radius: 20px;
+  background: #4b340387;
+  padding: 10px 20px;
+  font-size: 27px;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  font-family: "IBM Plex Mono", monospace;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  top: 2rem;
+  left: -33rem;
+  align-content: flex-start;
+}
+
+.btn:hover {
+  background: rgb(236, 222, 184);
+  opacity: 0.9;
+  color: rgb(133, 75, 0);
+}
+
+nav {
+  background: transparent;
+  margin-top: 2rem;
+  margin-right: 0rem;
+  height: auto;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  position: relative;
+  /* top: 65px; */
+  margin-top: 45px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: -70px 20px 20px;
+  background: transparent;
+}
+
+nav:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+nav ul li a {
+  color: white;
+  line-height: 30px;
+  font-size: 22px;
+  margin-top: -50px;
+  text-decoration: none;
+  padding: 8px 10px;
+}
+
+nav ul li a:hover {
+  /*Adding hover effect to the nav */
+  border-radius: 10px;
+  color: rgb(224, 219, 156);
+  box-shadow: 0 0 5px #aa8b00;
+}
+
+nav ul ul {
+  position: absolute;
+  top: -30px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul ul li {
+  position: relative; /* Setting properties of a relatively-positioned*/
+  margin: 27px -65px -10px;
+  width: 120px;
+  float: none;
+  display: list-item;
+}
